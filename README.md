@@ -140,14 +140,3 @@ curl -X POST http://localhost:8000/predict \
 
 **Sakshith Reddy**
 Dockerized Inference Environment – VoiceGuard Task
-
----
-
-If you want, I can:
-
-* Make this README **shorter** (1-page evaluator version)
-* Add **architecture diagram**
-* Add **CI/CD section**
-* Tailor wording specifically for **VoiceGuard reviewers**
-
-Just tell me 👍
