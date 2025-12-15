@@ -1,5 +1,3 @@
-# VoiceGuard-hackathon
-
 # VoiceGuard – Dockerized Inference Environment
 
 ## 📌 Overview
