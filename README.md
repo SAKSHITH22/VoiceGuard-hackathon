@@ -89,15 +89,16 @@ docker build -t fastapi-inference .
 
 ```bash
 docker run -d -p 8000:80 fastapi-inference
-
+```
 Container listens on port 80
 
 Application is accessible on port 8000 of the host
-```
+
 ### Access the Application
-```bash
+
 Swagger UI
-http://localhost:8000/docs
+```bash
+http://publicip:8000/docs
 ```
 ---
 
