@@ -103,18 +103,42 @@ http://publicip:8000/docs
 
 ## 🧪 Testing the Service
 
-### Health Endpoint
 
-```bash
-curl http://localhost:8000/health
+### Health Check
+
+```
+GET /health
+```
+
+Response:
+
+```json
+{
+  "status": "ok"
+}
 ```
 
 ### Prediction Endpoint
 
-```bash
-curl -X POST http://localhost:8000/predict \
--H "Content-Type: application/json" \
--d '{"features":[5.1,3.5,1.4,0.2]}'
+```
+POST /predict
+```
+
+Request:
+
+```json
+{
+  "text": "This is a good example"
+}
+```
+
+Response:
+
+```json
+{
+  "prediction": "positive",
+  "confidence": 0.9
+}
 ```
 
 ---
