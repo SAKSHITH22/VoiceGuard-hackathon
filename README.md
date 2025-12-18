@@ -36,43 +36,45 @@ fastapi-docker/
 
 ## 🚀 API Endpoints
 
+
 ### Health Check
 
 ```
 GET /health
 ```
 
-**Response**
+Response:
 
 ```json
 {
-  "status": "healthy"
+  "status": "ok"
 }
 ```
 
----
-
-### Prediction
+### Prediction Endpoint
 
 ```
 POST /predict
 ```
 
-**Request Body**
+Request:
 
 ```json
 {
-  "features": [5.1, 3.5, 1.4, 0.2]
+  "text": "This is a good example"
 }
 ```
 
-**Response**
+Response:
 
 ```json
 {
-  "prediction": [0]
+  "prediction": "positive",
+  "confidence": 0.9
 }
 ```
+
+---
 
 ---
 
