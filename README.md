@@ -11,14 +11,13 @@ The goal of this task is to demonstrate the ability to **containerize an inferen
 
 ## 🛠️ Tech Stack
 
-* **Python 3.10**
-* **FastAPI**
-* **Uvicorn**
-* **Docker**
-* **scikit-learn**
-* **NumPy**
-* **Joblib**
-
+- **Programming Language:** Python 3.10  
+- **Web Framework:** FastAPI  
+- **ASGI Server:** Uvicorn  
+- **Containerization:** Docker  
+- **Base Image:** python:3.10-slim  
+- **API Documentation:** Swagger UI (OpenAPI)  
+- **Deployment Platform:** AWS EC2 (Dockerized)
 ---
 
 ## 📂 Project Structure
