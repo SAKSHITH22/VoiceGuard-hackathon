@@ -1,16 +1,20 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from app.model import predict
 
-app = FastAPI()
+app = FastAPI(title="Inference API")
 
 class InputData(BaseModel):
-    features: list
+    text: str
 
 @app.get("/health")
 def health():
-    return {"status": "healthy"}
+    return {"status": "ok"}
 
 @app.post("/predict")
-def inference(data: InputData):
-    return {"prediction": predict(data.features)}
+def predict(data: InputData):
+    prediction = "positive" if "good" in data.text.lower() else "negative"
+    return {
+        "prediction": prediction,
+        "confidence": 0.9
+    }
+
