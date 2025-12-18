@@ -97,6 +97,13 @@ Response:
   "confidence": 0.9
 }
 ```
+---
+
+## ☁️ Deployment Notes (AWS EC2)
+
+* Allow inbound traffic on port **8000** in the EC2 Security Group
+* Docker container exposes port **80**
+* Uvicorn is bound to `0.0.0.0`
 
 ---
 
