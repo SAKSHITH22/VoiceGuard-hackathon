@@ -25,11 +25,12 @@ The goal of this task is to demonstrate the ability to **containerize an inferen
 
 ```
 .
-├── Dockerfile
-├── requirements.txt
-├── app
-│   ├── main.py        # FastAPI application
-│   └── model.py       # Model loading & prediction logic
+fastapi-docker/
+│── app/
+│ └── main.py
+│── requirements.txt
+│── Dockerfile
+│── README.md
 ```
 
 ---
@@ -81,15 +82,23 @@ POST /predict
 ### Build Docker Image
 
 ```bash
-docker build -t inference-api .
+docker build -t fastapi-inference .
 ```
 
 ### Run Container
 
 ```bash
-docker run -d -p 8000:8000 --name inference-container inference-api
-```
+docker run -d -p 8000:80 fastapi-inference
 
+Container listens on port 80
+
+Application is accessible on port 8000 of the host
+```
+### Access the Application
+```bash
+Swagger UI
+http://localhost:8000/docs
+```
 ---
 
 ## 🧪 Testing the Service
