@@ -32,51 +32,6 @@ fastapi-docker/
 │── README.md
 ```
 
----
-
-## 🚀 API Endpoints
-
-
-### Health Check
-
-```
-GET /health
-```
-
-Response:
-
-```json
-{
-  "status": "ok"
-}
-```
-
-### Prediction Endpoint
-
-```
-POST /predict
-```
-
-Request:
-
-```json
-{
-  "text": "This is a good example"
-}
-```
-
-Response:
-
-```json
-{
-  "prediction": "positive",
-  "confidence": 0.9
-}
-```
-
----
-
----
 
 ## 🐳 Docker Build & Run Instructions
 
